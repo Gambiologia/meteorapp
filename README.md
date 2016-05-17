@@ -54,3 +54,4 @@ Aqui este aplicativo de exemplo no modulus:
 * Fazer um aplicativo de exemplo com CRUD
 * Fazer versando ios e android
 * Testar app comunicando no deploy real
+* Fazer uma pagina no GHPages mostrando o app rodando na sua versao web
