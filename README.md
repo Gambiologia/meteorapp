@@ -66,6 +66,7 @@ Para adicionar suporte a angular no seu projeto digite a linha de comando:
 * meteor add angular
 * meteor remove blaze-html-templates ecmascript
 # meteor add angular-templates
+# meteor npm install --save angular angular-meteor angular-component
 * npm install stripe
 * meteor add modules
 
@@ -77,6 +78,10 @@ A instalação deve ser feita executando:
 
 * bower install angular-material
 
+
+Uma boa documentação para iniciar um projeto:
+
+* https://www.meteor.com/tutorials/angular/templates
 
 ### Mobile
 

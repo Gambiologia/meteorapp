@@ -1,3 +1,15 @@
+import angular from 'angular';
+import angularMeteor from 'angular-meteor';
+import 'angular-component';
+import eventosList from '../imports/components/eventosList/eventosList';
+
+ 
+angular.module('meteorapp', [
+  angularMeteor,
+  eventosList.name
+]);
+
+/*
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
@@ -20,3 +32,4 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
+*/
