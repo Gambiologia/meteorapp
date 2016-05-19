@@ -36,6 +36,10 @@ Exemplo de como criar um aplicativo, é bem simples.
 
 * https://www.meteor.com/tutorials/angular/creating-an-app
 
+Basta chamar a criação do projeto que el já monta os arquivos iniciais:
+
+* meteor create simple-todos
+
 Mas o melhor é fazer um fork deste projeto para a sua conta no github e começar a desenvolver, veja no topo direito desta pagina a opçao de fork, ele irá criar um reposítorio na sua conta como por exemplo:
 
 * https://github.com/mariohmol/meteorapp
@@ -48,10 +52,46 @@ Trabalhe no terminal sempre no diretório do seu projeto, você verá mais uso d
 
 Para iniciar a aplicação digite `meteor` no terminal e tecle enter. Ele deverá exibir algumas mensagens, pode demorar um pouco mais nas primeiras vezes porque ele baixa alguns pacotes mas ao final deve mostrar algo como localhost 3000. Abra seu navegador e acesse a url http://localhost:3000
 
+
+### Bibliotecas
+
+Vamos utilizar o AngularJS para fazer as interações de telas:
+
+* https://github.com/Urigo/angular-meteor
+
+Para adicionar suporte a angular no seu projeto digite a linha de comando:
+
+* meteor add angular
+* meteor remove blaze-html-templates ecmascript
+* npm install stripe
+* meteor add modules
+
+O design da aplicação será com o Google Material, portanto uma biblioteca em AngularJS:
+
+* https://material.angularjs.org/latest/
+
+A instalação deve ser feita executando:
+
+* bower install angular-material
+
+
+### Mobile
+
+Existe uma integração do meteor na geração de aplicativos para diversas plataformas, usando o Cordova.
+
+* http://guide.meteor.com/mobile.html#introduction
+
+
+Para este exemplo adicionaremos para o Android e iOS:
+
+* meteor add-platform android
+* meteor add-platform ios
+
 ### TODO
 
 * Fazer um aplicativo de exemplo com CRUD
 * Fazer versando ios e android
+
 
 
 
@@ -72,8 +112,9 @@ Aqui este aplicativo de exemplo no modulus:
 * Fazer uma instalacao de teste no heroku e documentar (https://www.heroku.com/)
 
 
-Crie um novo aplicativo, clique em Github account e dê autorização de acesso.
-Escolha o projeto que deseja publicar e depois ao final clique e Deploy Branch.
+Crie um novo aplicativo escolhendo um nome para ele, no nosso exemplo vamos chamar de gambiologia-meteorapp.
+
+Clique em Github account e dê autorização de acesso.Escolha o projeto que deseja publicar e depois ao final clique e Deploy Branch.
 
 Para possibilitar a execução de apps Meteor é necessáiro configurar o Heroku. 
 Acesse a aba Settings e em Buildpacks adicione o seguinte link:
@@ -96,12 +137,13 @@ Para gravar os dados utilizaremos o bando de dados MongoDB. No heroku tem uma ve
 
 * https://elements.heroku.com/addons/mongolab
 
-Utilizando o Toolbelt da Heroku poderemos ter mais controle do que acontece no servidor. Para isso abra o terminal e execute o comando heorku.
+Utilizando o Toolbelt da Heroku poderemos ter mais controle do que acontece no servidor. Para isso abra o terminal e execute o comando heroku.
+Ele vai pedir seu email e senha para conectar.
 
 
 Para ver mensagens de sistema, muito necessário para encontrar erros e realizar testes:
 
-* heroku logs --tail
+* heroku logs --tail --app gambiologia-meteorapp
 
 ## Executando
 
