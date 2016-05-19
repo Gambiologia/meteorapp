@@ -1,6 +1,8 @@
 # meteorapp
 
-Exemplo de App em meteor do início ao server
+Exemplo de App em meteor da criação do aplicativo até a instalação em um server.
+Este aplicativo tem um login e cadastro de usuário, além da edição de eventos a ser divulgado por quem instalar o Aplicativo.
+A ideia é que este aplicativo seja utilizado como forma de mentoria e também possa ser reutilizado como uma ferramenta de comunicação.
 
 Existe um instalador para maquinas Windows:
 
@@ -63,6 +65,7 @@ Para adicionar suporte a angular no seu projeto digite a linha de comando:
 
 * meteor add angular
 * meteor remove blaze-html-templates ecmascript
+# meteor add angular-templates
 * npm install stripe
 * meteor add modules
 
@@ -91,6 +94,7 @@ Para este exemplo adicionaremos para o Android e iOS:
 
 * Fazer um aplicativo de exemplo com CRUD
 * Fazer versando ios e android
+
 
 
 
@@ -144,6 +148,38 @@ Ele vai pedir seu email e senha para conectar.
 Para ver mensagens de sistema, muito necessário para encontrar erros e realizar testes:
 
 * heroku logs --tail --app gambiologia-meteorapp
+
+
+### Banco de dados
+
+Para conectar no banco de dados, você pode acessar no Heroku a parte de Resources e abrir a tela do banco, um link como esse:
+
+* https://www.mlab.com/databases/heroku_0gk00c2s#users
+
+Acessa a aba Users e clique em Add USer e adicione os seguintes parâmetros:
+
+* username: meteorapp
+* pass: meteorappPass
+
+Na aba Collection clique em Add Collection, e crie uma chamado usuarios e outra eventos.
+
+Veja que acima tem um exemplo de link para conectar sua aplicação ao banco de dados:
+
+* mongodb://<dbuser>:<dbpassword>@ds023912.mlab.com:23912/heroku_0gk00c2s
+
+Você deverá reescrever este link incluindo seu usuário e senha :
+
+mongodb://meteorapp:meteorappPass@ds023912.mlab.com:23912/heroku_0gk00c2s
+
+
+Para testar se você consegue conectar no banco de dados, execute o seguinte comando:
+
+* mongo ds023912.mlab.com:23912/heroku_0gk00c2s -u heroku_0gk00c2s -p fld6oeq8metg2rqpiol9fvegeo
+
+Dentro da sua aplicação no Heroku, em Settings -> Confi Variables você poderá ver uma variável chamada MONGODB_URI com a configuração de coneão com o banco de dados, como no exemplo abaixo:
+
+* mongodb://heroku_0gk00c2s:fld6oeq8metg2rqpiol9fvegeo@ds023912.mlab.com:23912/heroku_0gk00c2s
+
 
 ## Executando
 
