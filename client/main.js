@@ -2,8 +2,9 @@ import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 import 'angular-component';
 import eventosList from '../imports/components/eventosList/eventosList';
-
- 
+import '../imports/api/eventos.js';
+//import '../imports/startup/accounts-config.js';
+ //,'accounts.ui'
 angular.module('meteorapp', [
   angularMeteor,
   eventosList.name

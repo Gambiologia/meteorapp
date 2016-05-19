@@ -69,6 +69,8 @@ Para adicionar suporte a angular no seu projeto digite a linha de comando:
 # meteor npm install --save angular angular-meteor angular-component
 * npm install stripe
 * meteor add modules
+* meteor npm install --save angular-component
+* meteor add accounts-base
 
 O design da aplicação será com o Google Material, portanto uma biblioteca em AngularJS:
 
