@@ -20,3 +20,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 angular
 modules
 angular-templates
+accounts-base
+angular:angular-material

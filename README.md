@@ -71,14 +71,17 @@ Para adicionar suporte a angular no seu projeto digite a linha de comando:
 * meteor add modules
 * meteor npm install --save angular-component
 * meteor add accounts-base
+* meteor npm install --save angular-animate angular-aria angular-material
+* meteor npm install --save angular-ui-router
 
 O design da aplicação será com o Google Material, portanto uma biblioteca em AngularJS:
 
 * https://material.angularjs.org/latest/
 
-A instalação deve ser feita executando:
+Dicas de como usar o google material com o meteor:
 
-* bower install angular-material
+* http://www.angular-meteor.com/tutorials/socially/angular1/angular-material-and-custom-angular-auth-forms
+
 
 
 Uma boa documentação para iniciar um projeto:

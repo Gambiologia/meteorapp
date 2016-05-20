@@ -4,6 +4,7 @@ import template from './eventosList.html';
  
 import { Eventos } from '../../api/eventos.js';
 
+eventos = Eventos
 class EventosListCtrl {
 
   constructor($scope) {
