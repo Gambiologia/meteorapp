@@ -64,12 +64,18 @@ Mas o melhor é fazer um fork deste projeto para a sua conta no github e começa
 
 * https://github.com/mariohmol/meteorapp
 
-Este cógido agora deverá vir para sua máquina, aonde você poderá alterar e criar seu projeto. 
+Este cógido agora deverá vir para sua máquina, aonde você poderá alterar e criar seu projeto. Para isso abre o SourceTree, programa que você instalou a pouco, Clica em Clonar/Novo (ícone no canto superior esquerdo). Abrirá uma janela onde você deverá clicar no ícone do globo, no canto superior direito da tela. Selecione o meteorapp, clique em OK e depois no botão Clonar. 
 
-Veja em qual diretório ele copiou o código para sua máquina e entre nele usando o terminal do windows (Windows->Executar->cmd).
-Trabalhe no terminal sempre no diretório do seu projeto, você verá mais uso do terminal em outras etapas.
+Espere até o final para que ele possa baixar todo o código, veja que ele irá informar aonde está sendo clonado, como exemplo C:\Users\<username>\Documentos\meteorapp. Terá um botão de *Abrir no Explorer*, tome nota deste camino.
 
-Para iniciar a aplicação digite `meteor` no terminal e tecle enter. Ele deverá exibir algumas mensagens, pode demorar um pouco mais nas primeiras vezes porque ele baixa alguns pacotes mas ao final deve mostrar algo como localhost 3000. Abra seu navegador e acesse a url http://localhost:3000
+Agora abra o terminal do Windows (Windows->Executar->cmd), no caso do Linux e OSx é chamado Temrinal.
+Trabalhe no terminal sempre no diretório do seu projeto, você verá mais uso do terminal em outras etapas. Para entrar no diretorio escreva *cd <nome do diretorio>* e pressione ente. Como exemplo do windows será algo como:
+
+* C:\Users\<username>\Documentos\meteorapp
+
+Para iniciar a aplicação digite `meteor` no terminal e tecle enter. Em máquinas windows ele poderá abrir uma janela para pedir permissão para execução, escolha a opção sim.
+
+Ele deverá exibir algumas mensagens, pode demorar um pouco mais nas primeiras vezes porque ele baixa alguns pacotes mas ao final deve mostrar algo como localhost 3000. Abra seu navegador e acesse a url http://localhost:3000
 
 
 ### Novo aplicativo

@@ -80,12 +80,21 @@ Instale também a versão mais nova do android para executar o projeto, execute 
 
 Abrirá uma janela com o gerenciador de versões do Android, selecione a versão Android 6 (api 23) e instale.
 
+Por fim crie um emulador de celular Android para poder testar seu aplicativo, para isso abra o AVD (Android Virtual Devices):
+
+* /Users/<username>/Library/Android/sdk/tools/android avd
+
+Clique create, dê um nome, escolha um device (ex. Nexus 5), escolha um CPU (ex. ARM geralmente é mais rápido), um skin (ex HVGA) e clique em OK.
+
+Para executar sua aplicação no emulador execute:
+
+* meteor run android
+
 
 ## iOS
 
-Para adicionar a plataforma ios faça:
+Para adicionar a plataforma iOS faça:
 
 * meteor add-platform ios
-
 
 *TODO*: Ainda não temos um documentação para criação do aplicativo através 
