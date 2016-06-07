@@ -18,18 +18,32 @@ Crie uma conta no Github para criar novos projetos:
 
 * https://github.com/
 
-Instale o SourceTree para poder controlar seus arquivos de projeto.
+Instale o SourceTree para poder controlar seus arquivos de projeto. Abra o Sourcetree e ele pode te pedir uma conta na attlassian (bitbucket), se pedir faça. Depois deste passo escolha a conta do Github e entre com seu usuário/senha que você criou no Github. Isto irá linkar seu Sourcetree com sua conta no Github, para trabalhar neste projeto. Se houver outros passos além deste no sourcetree, pode pular ou continuar sem fazer.
 
 * https://www.sourcetreeapp.com
+
 
 Para transferir seus arquivos de projeto para um servidor na Web, você precisa de uma ferramenta de FTP, para isso instale o Filezilla
 
 * https://filezilla-project.org/
 
-A instalação em um servidor na Web será pelo Heroku, crie uma conta em heroku.com e instale o pacote de ferramenta deles
+A instalação em um servidor na Web será pelo Heroku, crie uma conta em heroku.com e instale o pacote de ferramenta deles. Ao criar o cadastro no Heroku ele pode pedir o nome da sua empresa e qual linguagem usa, são campos não obrigatórios portanto escolha o que quiser.
 
 * https://toolbelt.heroku.com/
 
+Para desenvolver Android você poderá ter qualquer sistema operacional (Windows, Linux ou OSx). Será necessário instalar alguns pré requisitos, são eles:
+
+Java JDK - Kit de desenvolvimento para aplicativos java, baixe no link abaixo conforme seu sistema operacional:
+
+* http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html
+
+Android SDK - Kit de desenvolvimento para aplicativos Android, que executa utilizando a linguagem Java. Faça o download conforme o link abaixo:
+
+* https://developer.android.com/studio/index.html
+
+Em caso de desenvolvimento para iOS você precisará de um MAC, caso tenha instale o XCode, que é a ferramenta que faz a compilação do código meteor para um aplicativo iOS:
+
+* https://developer.apple.com/xcode/download/
 
 
 ## Aplicativo
@@ -46,8 +60,7 @@ Mas o melhor é fazer um fork deste projeto para a sua conta no github e começa
 
 * https://github.com/mariohmol/meteorapp
 
-Este cógido agora deverá vir para sua máquina, aonde você poderá alterar e criar seu projeto. Abra o Sourcetree e ele pode te pedir uma conta na attlassian (bitbucket), se pedir faça. 
-Depois de entrar na sua conta conecte com sua conta do github, assim você poderá ver o repositório que você fez fork.
+Este cógido agora deverá vir para sua máquina, aonde você poderá alterar e criar seu projeto. 
 
 Veja em qual diretório ele copiou o código para sua máquina e entre nele usando o terminal do windows (Windows->Executar->cmd).
 Trabalhe no terminal sempre no diretório do seu projeto, você verá mais uso do terminal em outras etapas.
@@ -94,17 +107,47 @@ Existe uma integração do meteor na geração de aplicativos para diversas plat
 
 * http://guide.meteor.com/mobile.html#introduction
 
+Veja se você tem os prerequisitos para criar aplicativos através do link:
 
-Para este exemplo adicionaremos para o Android e iOS:
+* http://guide.meteor.com/mobile.html#installing-prerequisites
+
+
+
+
+#### Android
+
+Faça a instalação do Android SDK e após isto coloque no path do windows o diretório de instalação. Tome nota deste caminho, no caso do OSx o caminho deverá ser:
+
+* /Users/<username>/Library/Android/sdk
+
+Para incluir no path do OSx faça:
+
+* nano ~/.bash_profile
+
+E adicione os seguintes comandos:
+
+```
+export ANDROID_HOME="/Users/<username>/Library/Android/sdk"
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+```
+
+Após ter todas as dependências instaladas, adicione a plataforma Android:
 
 * meteor add-platform android
+
+Instale também a versão mais nova do android para executar o projeto, execute portanto o comando:
+
+* /Users/<username>/Library/Android/sdk/tools/android
+
+Abrirá uma janela com o gerenciador de versões do Android, selecione a versão Android 6 (api 23) e instale.
+
+
+#### iOS
+
+Para adicionar a plataforma ios faça:
+
+
 * meteor add-platform ios
-
-### TODO
-
-* Fazer um aplicativo de exemplo com CRUD
-* Fazer versando ios e android
-
 
 
 
@@ -193,7 +236,25 @@ Dentro da sua aplicação no Heroku, em Settings -> Confi Variables você poder�
 
 ## Executando
 
+Com seu aplicativo instalado na sua máquina você executá-lo através do comando:
+
+* meteor
+
+Para acessar o aplicativo você poderá abrir no seu navegador:
+
+* http://localhost:3000
+
+Para executar a versão android execute:
+
+* meteor run android
+
+
 ### TODO
+
+* Fazer um aplicativo de exemplo com CRUD
+* Fazer versando ios e android
+
+
 
 * Testar app comunicando no deploy real
 * Fazer uma pagina no GHPages mostrando o app rodando na sua versao web
