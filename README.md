@@ -53,6 +53,10 @@ Em caso de desenvolvimento para iOS você precisará de um MAC, caso tenha insta
 
 * https://developer.apple.com/xcode/download/
 
+Por fim precisamos instalar o NPM, que é uma ferramenta para instalar bibliotecas utilizadas pela nossa aplicação. Provavelmente a versão recomendada será a v4.4.5LTS. Baixe e instale no seu PC.
+
+* https://nodejs.org/en/
+
 
 ----
 
@@ -62,7 +66,7 @@ Em caso de desenvolvimento para iOS você precisará de um MAC, caso tenha insta
 
 Mas o melhor é fazer um fork deste projeto para a sua conta no github e começar a desenvolver, veja no topo direito desta pagina a opçao de fork, ele irá criar um reposítorio na sua conta como por exemplo:
 
-* https://github.com/mariohmol/meteorapp
+* https://github.com/Gambiologia/meteorapp
 
 Este cógido agora deverá vir para sua máquina, aonde você poderá alterar e criar seu projeto. Para isso abre o SourceTree, programa que você instalou a pouco, Clica em Clonar/Novo (ícone no canto superior esquerdo). Abrirá uma janela onde você deverá clicar no ícone do globo, no canto superior direito da tela. Selecione o meteorapp, clique em OK e depois no botão Clonar. 
 
@@ -76,6 +80,11 @@ Trabalhe no terminal sempre no diretório do seu projeto, você verá mais uso d
 Para iniciar a aplicação digite `meteor` no terminal e tecle enter. Em máquinas windows ele poderá abrir uma janela para pedir permissão para execução, escolha a opção sim.
 
 Ele deverá exibir algumas mensagens, pode demorar um pouco mais nas primeiras vezes porque ele baixa alguns pacotes mas ao final deve mostrar algo como localhost 3000. Abra seu navegador e acesse a url http://localhost:3000
+
+Se quiser para o aplicativo tecle no terminal Ctrl+C, ele irá perguntar se deseja para e escerva S (de sim). Agora instale as bibliotecas utilizadas pelo aplicativo, digitando no terminal:
+
+* npm install
+
 
 
 ### Novo aplicativo
@@ -106,13 +115,15 @@ Com seu aplicativo instalado na sua máquina você executá-lo através do coman
 
 * meteor
 
-Para acessar o aplicativo você poderá abrir no seu navegador:
+Acessar o aplicativo através do navegador por meio do link:
 
 * http://localhost:3000
 
 Para executar a versão android execute:
 
 * meteor run android
+
+Faça edições do seu código utilizando o Sublime, abra ele e clique em File -> Abrir e escolha a pasta aonde está o clone do projeto que você realizou.
 
 
 ### TODO
