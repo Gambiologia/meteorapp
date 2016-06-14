@@ -1,26 +1,23 @@
 <head>
-  <title>simple</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.7/angular-material.min.css">
-
+  <title>Meteor App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
 </head>
 
-
-
 <body>
-  <h1>Metero App</h1>
+  <h1>Meteor App</h1>
  
-
   <div class="container" ng-app="meteorapp" ng-cloack>
 
-<md-button class="md-raised">Button</md-button>
+    <md-button class="md-raised">Button</md-button>
 
   	<md-input-container>
       <label>Search</label>
-      <input ng-model="partiesList.searchText">
+      <input ng-model="partiesList.searchText"/>
     </md-input-container>
-  <eventos-list></eventos-list>
+
+    <eventos-list></eventos-list>
+
   </div>
 
 </body>

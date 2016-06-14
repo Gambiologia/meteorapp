@@ -4,11 +4,16 @@ Exemplo de App em meteor da criação do aplicativo até a instalação em um se
 Este aplicativo tem um login e cadastro de usuário, além da edição de eventos a ser divulgado por quem instalar o Aplicativo.
 A ideia é que este aplicativo seja utilizado como forma de mentoria e também possa ser reutilizado como uma ferramenta de comunicação.
 
-Existe um instalador para maquinas Windows:
+Caso queira ver o aplicativo deste exemplo funcionando no servidor, acess
 
-* https://www.meteor.com/install
+* gambiologia-meteorapp.herokuapp.com
+
 
 ## Ferramentas
+
+Existe um instalador para maquinas Windows , Linux e OSx:
+
+* https://www.meteor.com/install
 
 Para editar os arquivos do aplicativo utilize o Sublime:
 

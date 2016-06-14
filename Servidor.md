@@ -1,6 +1,6 @@
 Existe alguns servidores que trabalham facilmente com o Meteor.  Vamos tomar como principal exemplo o mais popular, Heroku:
 
-*https://www.heroku.com/
+* https://www.heroku.com/
 
 
 # Heroku
