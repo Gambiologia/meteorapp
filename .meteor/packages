@@ -22,3 +22,4 @@ modules
 angular-templates
 accounts-base
 angular:angular-material
+mdg:camera

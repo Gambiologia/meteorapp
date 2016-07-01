@@ -4,21 +4,44 @@
   <base href="/" />
 </head>
 
-<body>
-  <h1>Meteor App</h1>
- 
-  <div class="container" ng-app="meteorapp" ng-cloack>
+<body >
+  <header>
+    <md-toolbar md-scroll-shrink >
+      <div class="md-toolbar-tools">
+        <h3>
+          <span>Meteor App</span>
+        </h3>
+      </div>
+    </md-toolbar>
+  </header>
 
-    <md-button class="md-raised">Button</md-button>
+  <section>
+    <div class="container" ng-app="meteorapp" ng-cloack>
 
-  	<md-input-container>
-      <label>Search</label>
-      <input ng-model="partiesList.searchText"/>
-    </md-input-container>
+      <eventos-list></eventos-list>
 
-    <eventos-list></eventos-list>
+      <div ng-controller="cameraCtrl">
+        <form>
+          <md-input-container>
+            <label>Escolha o nome do evento</label>
+            <input ng-model="newEvento"/>
+          </md-input-container>
+          <md-button ng-click="takePicture()">Picture</md-button>
+          <md-button class="md-raised" ng-click="addEvento()">Salvar</md-button>
+          <hr/>
+          <img ng-src="{{imageData}}" ng-show="imageData">
+        </form>
+      
+        
+        
+      </div>
+    </div>
+  </section>
 
-  </div>
+
+  <footer>
+    <p>Desenvolvido por Gambiólogos</p>
+  </footer>
 
 </body>
 

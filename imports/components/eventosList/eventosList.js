@@ -9,14 +9,32 @@ class EventosListCtrl {
 
   constructor($scope) {
     $scope.viewModel(this);
+    $scope.searchEvento=null;
     this.helpers({
       eventos() {
-        retorno= Eventos.find({});
-        console.log(retorno);
-        return retorno;
+        if($scope.searchEvento) return Eventos.find({nome: $scope.searchEvento});
+        else return Eventos.find();
       }
-    })
+    });
   }
+
+  addEvento(newEvento) {
+    if(!newEvento) {
+      alert("Por favor, dê um nome ao evento");
+      return;
+    }
+    Eventos.insert({
+      nome: newEvento,
+      imageData: imageData,
+      createdAt: new Date
+    });
+    this.newEvento = '';
+  };
+
+  remEvento(id) {
+    Eventos.remove(id);
+  };
+  
 }
  
 export default angular.module('eventosList', [
